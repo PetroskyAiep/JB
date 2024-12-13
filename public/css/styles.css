@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+footer {
+    /* display: inline-block; */
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+}
+
+footer .grid-container{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 10px;
+    height: 800px;
+}
+
+.grid-item{
+    margin:0 5px;
+    margin: 5px;
+}
+
+.background-wrap {
+    position: relative;
+  }
+  
+  .background-wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .background-content {
+    position: relative;
+  }
+
+.bg-purple {
+    background-color: #6f42c1; /* Color morado */
+}
+
+.text-white {
+    color: white;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link-block{
+    color: black;
+}
+
+.link-block:hover{
+    color: rgb(111,66, 193);
+}
+
+.logo {
+    height: 50px;
+}
+
+#mapContainer {
+    height: 400px; /* Ajusta la altura según sea necesario */
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 20px;
+    z-index: 3;
+    height: 100%;
+    padding: 10px;
+}
+
+.card-img-top{
+    height: 50%;
+    object-fit: cover;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .whatsapp-icon {
+        height: 40px;
+    }
+}
+
+
+.bi-whatsapp {
+    fill: hsl(143, 100%, 50%);
+    width: 32px;
+    height: 32px;
+}
+
+.bi-whatsapp:hover {
+    fill: hsl(143, 100%, 40%);
+}
+
